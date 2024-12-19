@@ -1,5 +1,6 @@
 package actividad2;
 
+
 import java.util.*;
 
 public class actividad2 {
@@ -25,6 +26,35 @@ public class actividad2 {
 			}
 			System.out.println();
 		}
+		
+		Scanner s = new Scanner(System.in);
+		boolean numeroEncontrado = false;
+		
+		
+		//Pide un número al usuario que quiera comprobar si está en la matriz.
+		
+		System.out.println("Introduce el número que quieres comprobar si está en la matriz");
+		int numABuscar = s.nextInt();
+		
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (numABuscar == matriz[i][j]) {
+					System.out.println("Se ha encontrado el número en la matriz!");
+					numeroEncontrado = true;
+					break;
+				} 
+			}
+			if (numeroEncontrado) {
+				break;
+			}
+			
+		}
+		
+		if (!numeroEncontrado) {
+			System.out.println("No se ha encontrado el número de la matriz.");
+		}
+		
+
 	}
 
 }
