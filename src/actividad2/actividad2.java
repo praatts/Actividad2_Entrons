@@ -9,7 +9,7 @@ public class actividad2 {
 		final int COLUMNAS = 5;
 		final int FILAS = 5;
 		int[][] matriz = new int[FILAS][COLUMNAS];
-		Random nums = new Random(101);
+		Random nums = new Random();
 
 		// bucle que recorre la matriz y lo rellena con el random.
 		for (int i = 0; i < FILAS; i++) {
