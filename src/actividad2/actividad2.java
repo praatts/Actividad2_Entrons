@@ -6,6 +6,11 @@ public class actividad2 {
 	 
 		
 		int[][] matriz_inicial;
+		final int COLUMNAS = 5;
+		final int FILAS = 5;
+		
+		Random nums = new Random(101);
+		
 		
 
 	}
